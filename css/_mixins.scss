@@ -1,21 +1,22 @@
-$smaller-width: "750px";
+// For responsiveness
+$smaller-width: 910px;
+$font-stack:'Oswald', sans-serif;
+$header-space: 10px;
 
-@mixin small-view-shift
-
-
-
-
-@mixin small-view {
-  @media (max-width: #{smaller-width}) {
-    .post_header {
-    width: auto;
-    position: relative;
-    margin: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  .post_headerNav{
-    text-align: center;
-  }
-  }
+// Mixin for responsiveness changes
+@mixin small-view-shift {
+  width: auto;
+  position: relative;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
+@mixin content-pic-center{
+  width: 60%;
+  height: auto;
+  position: relative;
+  margin: auto;
+
+}
+
+

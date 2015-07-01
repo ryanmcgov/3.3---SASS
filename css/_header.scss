@@ -1,13 +1,13 @@
-* {
-  box-sizing: border-box;
+// * {
+//   box-sizing: border-box;
 
-}
-*,
-*before,
-*after {
-  box-sizing: inherit;
+// }
 
-}
+// *before,
+// *after {
+//   box-sizing: inherit;
+
+// }
 body {
   margin: 0;
   font-size: 18px;
@@ -17,26 +17,27 @@ body {
   position: fixed;
   top: 0;
   bottom: 0;
-  background: url('./images/sq.jpeg');
+  padding-left: $header-space;
+  background: url('../images/zKittens.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   width: 50%;
   color: #FFF;
+  font-family: $font-stack;
   text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
-    1px 1px 0 #000;  
-
-}
-.post_header > h1 {
+    1px 1px 0 #000; 
+  h1 {
   font-size: 47px;
   margin-top: 5px;
-}
-.post_header img {
+  }
+  img {
   height: 40px;
   width: 40px;
+  }
 }
 /*trying to align the name and sprite*/
 .post_header > div > p {
@@ -69,15 +70,15 @@ body {
   text-decoration: none;
 
 }
-@media all and (max-width: 750px) {
+@media all and (max-width: $smaller-width) {
   .post_header {
-    width: auto;
-    position: relative;
-    margin: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  .post_headerNav{
+    @include small-view-shift;
+    .post_headerNav{
+      text-align: center;
+    }
+    h1 {
+    margin-bottom: 0;
     text-align: center;
+    }
   }
 }
