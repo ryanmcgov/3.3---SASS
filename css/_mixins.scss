@@ -1,0 +1,21 @@
+$smaller-width: "750px";
+
+@mixin small-view-shift
+
+
+
+
+@mixin small-view {
+  @media (max-width: #{smaller-width}) {
+    .post_header {
+    width: auto;
+    position: relative;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .post_headerNav{
+    text-align: center;
+  }
+  }
+}
