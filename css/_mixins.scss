@@ -1,5 +1,4 @@
-// For responsiveness
-$smaller-width: 910px;
+$smaller-width: 850px;
 $font-stack:'Oswald', sans-serif;
 $header-space: 10px;
 
@@ -14,9 +13,12 @@ $header-space: 10px;
 @mixin content-pic-center{
   width: 60%;
   height: auto;
-  position: relative;
-  margin: auto;
-
+  margin-left: 20%;
+  padding: 25px 0 25px 0;
+}
+@mixin logo-size {
+  height: 35px;
+  width: 35px;
 }
 
 

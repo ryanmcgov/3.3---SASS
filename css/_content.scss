@@ -11,6 +11,12 @@
     border-bottom: 2px solid #c9c9c9;
 
   }
+  span img {
+    @include logo-size;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
   .content_pic {
     @include content-pic-center;
   }

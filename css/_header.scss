@@ -34,16 +34,19 @@ body {
   font-size: 47px;
   margin-top: 5px;
   }
-  img {
-  height: 40px;
-  width: 40px;
-  }
 }
-/*trying to align the name and sprite*/
-.post_header > div > p {
-  display: inline-block;
-  text-align: center;
-
+.logo {
+  img {
+    display: inline-block;
+    @include logo-size;
+  }
+  p {
+    display: inline-block;
+    position: relative;
+    top: -6px;
+    padding-left: 3px;
+    margin-top: 9px;
+  }
 }
 .post_headerNav {
   list-style: none;
@@ -51,25 +54,33 @@ body {
   padding-left: 0;
   padding-bottom: 10px;
   margin: 0;
-
 }
-.post_headerNav > li {
+.header_navList {
   display: inline-block;
-
+  &:after {
+    content: "-";
+  }
+  &:last-of-type:after {
+    content: none;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
-.post_headerNav > li:after {
-  content: "-";
+// .post_headerNav > li:after {
+//   content: "-";
 
-}
-.post_headerNav > li:last-of-type:after {
-  content: none;
+// }
+// .post_headerNav > li:last-of-type:after {
+//   content: none;
   
-}
-.post_headerNav > li > a{
-  color: inherit;
-  text-decoration: none;
+// }
+// .post_headerNav > li > a{
+//   color: inherit;
+//   text-decoration: none;
 
-}
+// }
 @media all and (max-width: $smaller-width) {
   .post_header {
     @include small-view-shift;
@@ -79,6 +90,10 @@ body {
     h1 {
     margin-bottom: 0;
     text-align: center;
+    }
+    .logo {
+      position: fixed;
+      z-index: 1;
     }
   }
 }
