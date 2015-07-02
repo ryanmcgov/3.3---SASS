@@ -7,10 +7,6 @@
   font-family: $font-stack;
   line-height: 27px;
   color: #2B2C38;
-  .top_bar {
-    border-bottom: 2px solid #c9c9c9;
-
-  }
   span img {
     @include logo-size;
     position: absolute;
@@ -20,6 +16,9 @@
   .content_pic {
     @include content-pic-center;
   }
+}
+.top_bar {
+  border-bottom: 2px solid #c9c9c9;
 }
 @media all and (max-width: $smaller-width) {
   .post_content {

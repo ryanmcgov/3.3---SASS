@@ -25,11 +25,7 @@ body {
   width: 50%;
   color: #FFF;
   font-family: $font-stack;
-  text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000; 
+  text-shadow: $text-outline;   
   h1 {
   font-size: 47px;
   margin-top: 5px;
@@ -58,29 +54,16 @@ body {
 .header_navList {
   display: inline-block;
   &:after {
-    content: "-";
+    content: "\2022";
   }
   &:last-of-type:after {
     content: none;
   }
-  a {
+  > a {
     color: inherit;
     text-decoration: none;
   }
 }
-// .post_headerNav > li:after {
-//   content: "-";
-
-// }
-// .post_headerNav > li:last-of-type:after {
-//   content: none;
-  
-// }
-// .post_headerNav > li > a{
-//   color: inherit;
-//   text-decoration: none;
-
-// }
 @media all and (max-width: $smaller-width) {
   .post_header {
     @include small-view-shift;

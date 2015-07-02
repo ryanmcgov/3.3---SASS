@@ -1,6 +1,10 @@
 $smaller-width: 850px;
 $font-stack:'Oswald', sans-serif;
 $header-space: 10px;
+$text-outline: -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                 1px 1px 0 #000;
 
 // Mixin for responsiveness changes
 @mixin small-view-shift {
