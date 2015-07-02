@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-size: 18px; }
+
+.post_header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding-left: 10px;
+  background: url("../images/zKittens.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 50%;
+  color: #FFF;
+  font-family: "Oswald", sans-serif;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+  .post_header h1 {
+    font-size: 47px;
+    margin-top: 5px; }
+
+.logo img {
+  display: inline-block;
+  height: 35px;
+  width: 35px; }
+.logo p {
+  display: inline-block;
+  position: relative;
+  top: -6px;
+  padding-left: 3px;
+  margin-top: 9px; }
+
+.post_headerNav {
+  list-style: none;
+  padding-top: 50px;
+  padding-left: 0;
+  padding-bottom: 10px;
+  margin: 0; }
+
+.header_navList {
+  display: inline-block; }
+  .header_navList:after {
+    content: "\2022"; }
+  .header_navList:last-of-type:after {
+    content: none; }
+  .header_navList > a {
+    color: inherit;
+    text-decoration: none; }
+
+@media all and (max-width: 850px) {
+  .post_header {
+    width: auto;
+    position: relative;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0; }
+    .post_header .post_headerNav {
+      text-align: center; }
+    .post_header h1 {
+      margin-bottom: 0;
+      text-align: center; }
+    .post_header .logo {
+      position: fixed;
+      z-index: 1; } }
+.post_content {
+  background-color: #CCEBFF;
+  width: 45%;
+  height: 100%;
+  margin-left: 50%;
+  padding: 200px 40px 40px 40px;
+  font-family: "Oswald", sans-serif;
+  line-height: 27px;
+  color: #2B2C38; }
+  .post_content span img {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 5px;
+    right: 5px; }
+  .post_content .content_pic {
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    padding: 25px 0 25px 0; }
+
+.top_bar {
+  border-bottom: 2px solid #c9c9c9; }
+
+@media all and (max-width: 850px) {
+  .post_content {
+    width: auto;
+    position: relative;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-top: 15px; }
+    .post_content .top_bar {
+      border: none; }
+    .post_content p {
+      margin-top: 0; } }
+
+/*# sourceMappingURL=styles.css.map */
